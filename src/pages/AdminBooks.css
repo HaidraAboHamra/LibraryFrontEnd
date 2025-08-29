@@ -82,12 +82,30 @@
   .admin-books__pager { display:flex; justify-content:space-between; align-items:center; margin-top: 18px; gap: 12px; flex-wrap: wrap; }
   .pager-controls { display:flex; align-items:center; gap:10px; }
   .pager-info { background: white; padding: 8px 12px; border-radius: 8px; }
+  .book-image {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+  }
   
   /* modal / form */
   .modal { position: fixed; inset: 0; z-index: 60; display:flex; align-items:center; justify-content:center; padding: 20px; }
   .modal__backdrop { position: absolute; inset: 0; background: rgba(0,0,0,0.45); }
-  .modal__dialog { position: relative; z-index: 10; width: 100%; max-width: 720px; background: white; border-radius: 16px; padding: 20px; box-shadow: 0 18px 44px rgba(0,0,0,0.25); }
-  .modal__title { margin: 0 0 12px 0; color: var(--brand-dark); }
+  .modal__dialog { 
+    position: relative; 
+    z-index: 10; 
+    width: 100%; 
+    max-width: 720px; 
+    max-height: 90vh; /* لا يتجاوز 90% من ارتفاع الشاشة */
+    background: white; 
+    border-radius: 16px; 
+    padding: 20px; 
+    box-shadow: 0 18px 44px rgba(0,0,0,0.25); 
+    overflow-y: auto; /* يضيف scroll عند الحاجة */
+  }
+   .modal__title { margin: 0 0 12px 0; color: var(--brand-dark); }
   .form__error { color: #b91c1c; background: #ffeeee; padding: 8px; border-radius: 8px; margin-bottom: 12px; }
   .form__label { display:block; margin-top: 12px; margin-bottom: 6px; color: var(--brand-dark); font-size: 13px; }
   .input.input--textarea { min-height: 100px; resize: vertical; }
