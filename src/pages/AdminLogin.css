@@ -1,0 +1,18 @@
+:root{
+    --brand-800:#8452E6;
+    --brand-900:#6A36F1;
+    --bg:#FBF9FD;
+    --muted:#6b5fa0;
+  }
+  
+  .login-page { min-height:100vh; display:flex; align-items:center; justify-content:center; background: linear-gradient(180deg, #EADEF6, var(--bg)); padding:24px; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial; }
+  .login-card { width:100%; max-width:420px; background:white; border-radius:12px; padding:22px; box-shadow: 0 12px 30px rgba(68,52,126,0.08); direction:rtl; }
+  .login-title { margin:0; color:var(--brand-900); font-size:20px; font-weight:800; }
+  .login-sub { margin:6px 0 14px; color:var(--muted); font-size:13px; }
+  .field { display:block; margin-top:10px; }
+  .field span { display:block; font-size:13px; color:var(--brand-900); margin-bottom:6px; }
+  .field input { width:100%; padding:10px 12px; border-radius:8px; border:1px solid rgba(0,0,0,0.06); box-sizing:border-box; }
+  .actions { display:flex; justify-content:flex-end; margin-top:16px; }
+  .btn-primary { background: linear-gradient(90deg,var(--brand-800),var(--brand-900)); color:white; border:none; padding:10px 16px; border-radius:999px; cursor:pointer; font-weight:700; }
+  .btn-primary:disabled { opacity:.6; cursor:default; }
+  
